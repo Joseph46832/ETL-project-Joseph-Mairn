@@ -1,0 +1,25 @@
+2026-10-12 12:14:38,755 [INFO] === INICIANDO PIPELINE ETL (MEDALLION ARCHITECTURE) ===
+2026-10-12 12:14:38,757 [INFO] Configuración cargada exitosamente desde config.yaml.
+2026-10-12 12:14:38,757 [INFO] --- ETAPA 1: EXTRACCIÓN (BRONZE) ---
+2026-10-12 12:14:58,009 [INFO] === INICIANDO PIPELINE ETL (MEDALLION ARCHITECTURE) ===
+2026-10-12 12:14:58,011 [INFO] Configuración cargada exitosamente desde config.yaml.
+2026-10-12 12:14:58,011 [INFO] --- ETAPA 1: EXTRACCIÓN (BRONZE) ---
+2026-10-12 12:14:58,011 [ERROR] No se encontró el archivo crudo en la ruta Bronze: data/bronze/calidad_aire_raw.csv
+2026-10-12 12:16:07,313 [INFO] === INICIANDO PIPELINE ETL (MEDALLION ARCHITECTURE) ===
+2026-10-12 12:16:07,314 [INFO] Configuración cargada exitosamente desde config.yaml.
+2026-10-12 12:16:07,314 [INFO] --- ETAPA 1: EXTRACCIÓN (BRONZE) ---
+2026-10-12 12:16:07,971 [INFO] Capa Bronze completada con éxito. Archivo raw en: data/bronze/calidad_aire_raw.csv
+2026-10-12 12:16:07,983 [INFO] --- ETAPA 2: TRANSFORMACIÓN Y LIMPIEZA (SILVER) ---
+2026-10-12 12:16:08,029 [INFO] Capa Silver procesada exitosamente. Datos limpios en: data/silver/calidad_aire_limpio.csv
+2026-10-12 12:16:08,030 [INFO] --- ETAPA 3: CARGA Y DATA MARTS (GOLD) ---
+2026-10-12 12:16:08,058 [INFO] Capa Gold procesada exitosamente. Data Marts generados.
+2026-10-12 12:16:08,058 [INFO] === PIPELINE ETL FINALIZADO CON ÉXITO ===
+2026-10-14 13:49:20,419 [INFO] === INICIANDO PIPELINE ETL (MEDALLION ARCHITECTURE) ===
+2026-10-14 13:49:20,420 [INFO] Configuración cargada exitosamente desde config.yaml.
+2026-10-14 13:49:20,420 [INFO] --- ETAPA 1: EXTRACCIÓN (BRONZE) ---
+2026-10-14 13:49:22,614 [INFO] Capa Bronze completada con éxito. Archivo raw en: data/bronze/calidad_aire_raw.csv
+2026-10-14 13:49:22,628 [INFO] --- ETAPA 2: TRANSFORMACIÓN Y LIMPIEZA (SILVER) ---
+2026-10-14 13:49:22,680 [INFO] Capa Silver procesada exitosamente. Datos limpios en: data/silver/calidad_aire_limpio.csv
+2026-10-14 13:49:22,680 [INFO] --- ETAPA 3: CARGA Y DATA MARTS (GOLD) ---
+2026-10-14 13:49:22,718 [INFO] Capa Gold procesada exitosamente. Data Marts generados.
+2026-10-14 13:49:22,718 [INFO] === PIPELINE ETL FINALIZADO CON ÉXITO ===
