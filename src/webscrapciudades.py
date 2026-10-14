@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import time
 import re
 
-# 1. JSON que arrojo la terminal aqui:
+# 1. JSON (Si lo se no es JSON pero parece un JSON) que arrojo la terminal aqui:
 texto_terminal = """
 mapeo_paises = {
     "granville": "",
@@ -480,11 +480,14 @@ def buscar_pais_wikipedia(ciudad):
             
     except Exception as e:
         return "Error de conexion"
+#No encontrado en infobox significa que al meter la URL en la web hay varios lugares con el mismo nombre por lo que no podemos saber a cual
+#Pais pertenece
 
+#Y el de error HTTP es por si no hay paginas sobre ello, es decir errores 404
 # ==========================================
 # BLOQUE DE EJECUCIÓN PRINCIPAL
 # ==========================================
-if __name__ == "__main__":
+if __name__ == "__main__": #Tampoco sirve esto solo corro independientemente  ya que si lo incluyo en el main.py el proceso seria muy tardio
     print("--- INICIANDO SCRAPING DE WIKIPEDIA ---")
     ciudades = extraer_ciudades(texto_terminal)
     print(f"Se encontraron {len(ciudades)} ciudades para procesar.\n")
@@ -507,5 +510,6 @@ if __name__ == "__main__":
     print(diccionario_final)
     
     with open("diccionario_completado.txt", "w", encoding="utf-8") as f:
-        f.write(diccionario_final)
+        f.write(diccionario_final) #Guardamos otra vez pero en un archivo distinto con la data y asociado a pais y ciudades
     print("\nEl diccionario tambien se guardo en 'diccionario_completado.txt'.")
+    #Tras este archivo el ultimo de la secuencia es clean_excel.py

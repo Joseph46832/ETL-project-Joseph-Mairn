@@ -37,13 +37,13 @@ def cargar_datos_crudos(config):
 # 3. FUNCIÓN DE TRANSFORMACIÓN (MEMORIA A SILVER)
 # ==========================================
 def limpiar_datos(df, config):
-    print("\n--- INICIANDO LIMPIEZA DE DATOS (CAPA SILVER) ---")
+    print("--- INICIANDO LIMPIEZA DE DATOS (CAPA SILVER) ---")
     
     # 1. Estandarizar nombres de columnas a snake_case
     df.columns = [col.strip().lower().replace(" ", "_") for col in df.columns]
     print("1. Columnas estandarizadas a formato snake_case.")
     
-    # 2. RECUPERACIÓN DE DATOS (El diccionario gigante de tu Scraper)
+    # 2. RECUPERACIÓN DE DATOS Aqui ponemos lo que nos dio diccionario_completado.txt
     mapeo_paises = {
         "granville": "No encontrado en Infobox",
         "kingston upon hull": "England",
@@ -509,13 +509,13 @@ def limpiar_datos(df, config):
     ruta_silver = os.path.join(carpeta_silver, "calidad_aire_limpio.csv")
     df.to_csv(ruta_silver, index=False)
     
-    print(f"\n¡Transformacion exitosa! Datos guardados en Silver: {ruta_silver}")
+    print(f"¡Transformacion exitosa! Datos guardados en Silver: {ruta_silver}")
     return ruta_silver
 
 # ==========================================
 # BLOQUE DE PRUEBA LOCAL
 # ==========================================
-if __name__ == "__main__":
+if __name__ == "__main__": #Este si sirveee
     ruta_config = "../../config/config.yaml" if os.path.exists("../../config/config.yaml") else "config/config.yaml"
     
     config_dict = load_config(config_path=ruta_config) 
