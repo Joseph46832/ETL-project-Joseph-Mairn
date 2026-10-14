@@ -1,0 +1,4 @@
+touch data/bronze/.gitkeep
+touch data/silver/.gitkeep
+touch data/gold/.gitkeep
+touch logs/.gitkeep

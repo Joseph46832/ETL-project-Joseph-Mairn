@@ -5,7 +5,8 @@ project:
   description: "Este proyecto va explicar la conexión entre el orquestador main y cada uno de las etapas del ETL"
   author: "Joseph Marin Parra"
   date : "2026-10/14"
-
+  github_repository: https://github.com/Joseph46832/ETL-project-Joseph-Mairn
+  
 path:
   data_dir: data
   bronze_dir : data/bronze

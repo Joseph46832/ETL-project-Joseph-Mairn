@@ -3,7 +3,9 @@ virtualenv/
 __pycache__/
 .ipynb_checkpoints/
 *.zip
-data/bronze/
-data/silver/
-data/gold/
-logs/
+
+# Ignorar los datos pesados dentro de las carpetas, pero conservar la estructura
+data/bronze/*.csv
+data/silver/*.csv
+data/gold/*.csv
+logs/*.txt
