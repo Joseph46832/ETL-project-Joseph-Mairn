@@ -1,3 +1,9 @@
 virtualenv/
+.venv/
 __pycache__/
 .ipynb_checkpoints/
+*.zip
+data/bronze/
+data/silver/
+data/gold/
+logs/
