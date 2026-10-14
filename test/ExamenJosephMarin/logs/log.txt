@@ -1,0 +1,30 @@
+2026-10-14 16:27:56,626 [INFO] === INICIANDO PIPELINE ETL (MEDALLION ARCHITECTURE) ===
+2026-10-14 16:27:56,627 [INFO] Configuración cargada exitosamente desde config.yaml.
+2026-10-14 16:27:56,627 [INFO] --- ETAPA 1: EXTRACCIÓN (BRONZE) ---
+2026-10-14 16:27:56,628 [ERROR] Error crítico durante la etapa de extracción (Bronze): No module named 'kagglehub'
+2026-10-14 16:30:19,112 [INFO] === INICIANDO PIPELINE ETL (MEDALLION ARCHITECTURE) ===
+2026-10-14 16:30:19,114 [INFO] Configuración cargada exitosamente desde config.yaml.
+2026-10-14 16:30:19,114 [INFO] --- ETAPA 1: EXTRACCIÓN (BRONZE) ---
+2026-10-14 16:30:19,718 [INFO] Capa Bronze completada con éxito. Archivo raw en: data/bronze/calidad_aire_raw.csv
+2026-10-14 16:30:19,730 [INFO] --- ETAPA 2: TRANSFORMACIÓN Y LIMPIEZA (SILVER) ---
+2026-10-14 16:30:19,782 [INFO] Capa Silver procesada exitosamente. Datos limpios en: data/silver/calidad_aire_limpio.csv
+2026-10-14 16:30:19,782 [INFO] --- ETAPA 3: CARGA Y DATA MARTS (GOLD) ---
+2026-10-14 16:30:19,782 [ERROR] Error durante la generación de la capa Gold: No module named 'pycountry_convert'
+2026-10-14 16:37:57,205 [INFO] === INICIANDO PIPELINE ETL (MEDALLION ARCHITECTURE) ===
+2026-10-14 16:37:57,207 [INFO] Configuración cargada exitosamente desde config.yaml.
+2026-10-14 16:37:57,207 [INFO] --- ETAPA 1: EXTRACCIÓN (BRONZE) ---
+2026-10-14 16:37:57,890 [INFO] Capa Bronze completada con éxito. Archivo raw en: data/bronze/calidad_aire_raw.csv
+2026-10-14 16:37:57,903 [INFO] --- ETAPA 2: TRANSFORMACIÓN Y LIMPIEZA (SILVER) ---
+2026-10-14 16:37:57,954 [INFO] Capa Silver procesada exitosamente. Datos limpios en: data/silver/calidad_aire_limpio.csv
+2026-10-14 16:37:57,954 [INFO] --- ETAPA 3: CARGA Y DATA MARTS (GOLD) ---
+2026-10-14 16:37:57,997 [INFO] Capa Gold procesada exitosamente. Data Marts generados.
+2026-10-14 16:37:57,997 [INFO] === PIPELINE ETL FINALIZADO CON ÉXITO ===
+2026-10-14 16:38:16,940 [INFO] === INICIANDO PIPELINE ETL (MEDALLION ARCHITECTURE) ===
+2026-10-14 16:38:16,943 [INFO] Configuración cargada exitosamente desde config.yaml.
+2026-10-14 16:38:16,943 [INFO] --- ETAPA 1: EXTRACCIÓN (BRONZE) ---
+2026-10-14 16:38:17,525 [INFO] Capa Bronze completada con éxito. Archivo raw en: data/bronze/calidad_aire_raw.csv
+2026-10-14 16:38:17,537 [INFO] --- ETAPA 2: TRANSFORMACIÓN Y LIMPIEZA (SILVER) ---
+2026-10-14 16:38:17,588 [INFO] Capa Silver procesada exitosamente. Datos limpios en: data/silver/calidad_aire_limpio.csv
+2026-10-14 16:38:17,588 [INFO] --- ETAPA 3: CARGA Y DATA MARTS (GOLD) ---
+2026-10-14 16:38:17,630 [INFO] Capa Gold procesada exitosamente. Data Marts generados.
+2026-10-14 16:38:17,631 [INFO] === PIPELINE ETL FINALIZADO CON ÉXITO ===

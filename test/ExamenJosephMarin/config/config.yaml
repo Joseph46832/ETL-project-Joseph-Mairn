@@ -1,0 +1,46 @@
+
+project:
+  name: "Ejercicio completo de ETL (Examen) con metodología medallon"
+  version: "1.0"
+  description: "Este proyecto va explicar la conexión entre el orquestador main y cada uno de las etapas del ETL"
+  author: "Joseph Marin Parra"
+  date : "2026-10/14"
+  github_repository: https://github.com/Joseph46832/ETL-project-Joseph-Mairn
+  
+path:
+  data_dir: data
+  bronze_dir : data/bronze
+  silver_dir : data/silver
+  gold_dir : data/gold
+  logs_dir : logs
+  notebooks_dir : notebooks
+  scripts_dir : src
+  extract_dir : src/extract
+  transform_dir : src/transform
+  load_dir : src/load
+
+sources:
+  raw_airquality_data:
+    path: data/bronze/calidad_aire_raw.csv
+    file_name: calidad_aire_raw.csv
+    file_type:  csv
+    author: kaggle
+  clean_airquality_data:
+    path: data/silver/calidad_aire_limpio.csv
+    file_name: calidad_aire_limpio.csv
+    file_type: csv
+    author: kaggle
+  golden_ariquality_data:
+
+
+constants:
+  DATE_FORMAT: "%d-%m-%Y"
+  Pi: 3.141592653589793
+
+equations:
+  gravity: 9.81
+  speed_of_light: 299792458
+  planck_constant: 6.62607015e-34
+  boltzmann_constant: 1.380649e-23
+  avogadro_constant: 6.02214076e23
+  gas_constant: 8.314462618
