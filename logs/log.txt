@@ -1,0 +1,9 @@
+2026-10-14 17:20:42,287 [INFO] === INICIANDO PIPELINE ETL (MEDALLION ARCHITECTURE) ===
+2026-10-14 17:20:42,289 [INFO] Configuración cargada exitosamente desde config.yaml.
+2026-10-14 17:20:42,289 [INFO] --- ETAPA 1: EXTRACCIÓN (BRONZE) ---
+2026-10-14 17:20:42,929 [INFO] Capa Bronze completada con éxito. Archivo raw en: data/bronze/calidad_aire_raw.csv
+2026-10-14 17:20:42,942 [INFO] --- ETAPA 2: TRANSFORMACIÓN Y LIMPIEZA (SILVER) ---
+2026-10-14 17:20:42,994 [INFO] Capa Silver procesada exitosamente. Datos limpios en: data/silver/calidad_aire_limpio.csv
+2026-10-14 17:20:42,994 [INFO] --- ETAPA 3: CARGA Y DATA MARTS (GOLD) ---
+2026-10-14 17:20:43,037 [INFO] Capa Gold procesada exitosamente. Data Marts generados.
+2026-10-14 17:20:43,037 [INFO] === PIPELINE ETL FINALIZADO CON ÉXITO ===

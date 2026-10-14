@@ -61,7 +61,7 @@ def pais_a_continente(pais):
 # 4. FUNCIÓN DE CONSTRUCCIÓN DE DATA MARTS
 # ==========================================
 def construir_data_marts(df, config):
-    print("\n--- CONSTRUYENDO DATA MARTS (MÉTRICAS DE NEGOCIO) ---")
+    print("--- CONSTRUYENDO DATA MARTS (MÉTRICAS DE NEGOCIO) ---")
     
     # 1. Resumen Ejecutivo por País
     df_metricas_pais = df.groupby('country').agg(
@@ -105,7 +105,7 @@ def construir_data_marts(df, config):
     df_matriz_peligro.to_csv(ruta_categorias, index=False)
     df_metricas_continente.to_csv(ruta_continente, index=False)
     
-    print(f"\n¡Carga exitosa! Archivos analíticos guardados en: {carpeta_destino}")
+    print(f"¡Carga exitosa! Archivos analíticos guardados en: {carpeta_destino}")
     return ruta_pais, ruta_categorias, ruta_continente
 
 # ==========================================
